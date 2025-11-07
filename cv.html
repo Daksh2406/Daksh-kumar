@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional CV - [Your Name]</title>
+    
+    <style>
+        /* --- Base Styles and Layout --- */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cv-container {
+            width: 100%;
+            max-width: 900px; /* Standard A4-like width */
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* --- Typography and Headings --- */
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #007BFF; /* A professional blue color */
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            font-size: 1.5em;
+        }
+
+        h3 {
+            color: #555;
+            margin: 10px 0 5px 0;
+            font-size: 1.2em;
+        }
+
+        p, li {
+            color: #444;
+        }
+
+        /* --- Header and Profile Photo --- */
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-photo {
+            width: 120px; /* Size of the image */
+            height: 120px;
+            object-fit: cover; /* Ensures the image looks good */
+            border-radius: 50%; /* Makes it round */
+            border: 3px solid #007BFF;
+        }
+
+        .header h1 {
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #777;
+            margin-top: -5px;
+        }
+
+        /* --- Contact and Sections --- */
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            margin-right: 8px;
+            font-size: 1.1em;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            list-style: disc;
+            padding-left: 20px;
+            column-count: 2; /* Arranges skills into two columns */
+            column-gap: 40px;
+        }
+
+        .job-entry, .education-entry {
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 3px solid #ccc;
+        }
+
+        .date {
+            font-style: italic;
+            color: #777;
+            margin: 0 0 5px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* --- Print Button Styling (for screen only) --- */
+        .print-button-container {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #28a745; /* Green button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* --- Media Query for Printing (The magic for print-friendly) --- */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .cv-container {
+                box-shadow: none; /* Remove shadow for printing */
+                padding: 0;
+            }
+            /* Hide the print button and lines when printing */
+            .print-button-container, hr {
+                display: none; 
+            }
+            /* Ensure all links and text are black for print clarity */
+            a, p, li, h1, h2, h3 {
+                color: #000 !important;
+            }
+            .contact-info ul {
+                display: block; /* Stack contact info for better print layout */
+                line-height: 1.8;
+            }
+            .skills-list {
+                column-count: 1; /* Use a single column for skills when printing */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        
+        <header class="header">
+            <img src="WhatsApp Image 2025-10-21 at 19.16.03_0766a6af.jpg" alt="Your Profile Picture" class="profile-photo">
+            <h1>DAKSH KUMAR</h1>
+            <p class="tagline">Job Title / Professional Focus</p>
+        </header>
+        
+        <section class="contact-info">
+            <h2>Contact</h2>
+            <ul>
+                <li><i class="icon">📧</i> **Email:** dakshkumar4617@gmail.com</li>
+                <li><i class="icon">📱</i> **Phone:** +91 9528095030</li>
+                <li><i class="icon">📍</i> **Location:** Meerut, India</li>
+                <li><i class="icon">🔗</i> **My Class 10 Web:** <a href="https://daksh2406.github.io/class-10-quiz-app/"> my web </a></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <main class="main-content">
+            
+            <section class="section">
+                <h2>📝 Professional Summary</h2>
+                <p>A concise, 3-4 sentence summary of your career, skills, and goals. Highlight your key strengths and what you bring to a team or project. *Example: A highly motivated and results-driven individual with 5+ years of experience in full-stack web development, specializing in React and Node.js. Proven ability to deliver high-quality code and lead successful project teams.*</p>
+            </section>
+
+            <section class="section">
+                <h2>🛠️ Skills</h2>
+                <ul class="skills-list">
+                    <li>**Programming Languages:** JavaScript, Python, Java</li>
+                    <li>**Frameworks/Libraries:** React, Node.js, Django, HTML5, CSS3</li>
+                    <li>**Tools/Platform:** Git, Docker, AWS, VS Code</li>
+                    <li>**Soft Skills:** Team Leadership, Problem Solving, Communication</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>💼 Work Experience</h2>
+                <div class="job-entry">
+                    <h3>Senior Web Developer | Tech Corp</h3>
+                    <p class="date">Jan 2021 - Present | City, Country</p>
+                    <ul>
+                        <li>Led a team of 4 developers in the redesign of the main company application, resulting in a 25% increase in user engagement.</li>
+                        <li>Developed and maintained core features using React and REST APIs.</li>
+                        <li>Mentored junior developers and conducted code reviews to ensure code quality.</li>
+                    </ul>
+                </div>
+
+                <div class="job-entry">
+                    <h3>Junior Developer | Startup XYZ</h3>
+                    <p class="date">Jul 2018 - Dec 2020 | City, Country</p>
+                    <ul>
+                        <li>Contributed to the development of a microservice architecture using Python and Django.</li>
+                        <li>Fixed critical bugs and improved application performance.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>🎓 Education</h2>
+                <div class="education-entry">
+                    <h3>B.Tech in Computer Science | University Name</h3>
+                    <p class="date">2014 - 2018 | City, Country</p>
+                    <p>Relevant coursework included Data Structures, Algorithms, and Database Management.</p>
+                </div>
+            </section>
+
+        </main>
+        
+        <div class="print-button-container">
+            <button onclick="printCV()">🖨️ Print / Save as PDF</button>
+        </div>
+    </div>
+    
+    <script>
+        // printCV function for the Print / Save as PDF button
+        function printCV() {
+            // This function calls the browser's native print dialog
+            window.print();
+        }
+    </script>
+</body>
+</html>
